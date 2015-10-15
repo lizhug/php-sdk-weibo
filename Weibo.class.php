@@ -17,7 +17,6 @@
  *           case \Org\Weibo::MSGTYPE_EVENT:
  *               $eventData = $weObj->getRevData();
  *               if ($eventData['subtype'] == \Org\Weibo::EVENT_FOLLOW) {
- *                   //关注的时候自动注册
  *                   $weObj->text("#欢迎关注租哪儿 最专业的互联网租房平台#【房东直租，0中介费】【聚焦年轻人，更多优质房源】--点击「我要找房」即可搜索心仪房源。--点击「发布房源」即可免费发布房源。网站链接：http://www.zunar.com.cn")->reply();
  *               } else if ($eventData['subtype'] == \Org\Weibo::EVENT_UNFOLLOW){
  *                   $weObj->text("感谢您使用租哪儿，最专业的互联网租房平台，期待您的再次使用。网站链接：http://www.zunar.com.cn")->reply();
